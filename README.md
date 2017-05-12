@@ -4,4 +4,4 @@ Scrapes IPs from a file, formats it to make it readable, removes copies, and pre
 Recommended OS: Debian (9)
 
 ARGUMENT LIST:
-*none yet*
+"a/file/somewhere"
