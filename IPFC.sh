@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+mkdir -p Temp
 which git &> /dev/null || { echo >&2 "I require git but it's not installed.  Aborting."; ExitError 1; }
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd  )"
 cd $DIR/Temp
