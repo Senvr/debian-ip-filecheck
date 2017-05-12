@@ -1,0 +1,13 @@
+Variables:
+================
+/root/Dontreadme.txt
+/home/lee/Programming/IPFC
+0.1
+linux
+Linux
+
+False
+=================
+Read: /root/Dontreadme.txt. Success: False. Error (if any): filesize less than zero
+=================
+End debug
