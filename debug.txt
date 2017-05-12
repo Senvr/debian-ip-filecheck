@@ -1,0 +1,13 @@
+Variables:
+================
+
+/home/lee/Programming/debian-ip-filecheck
+0.2
+linux
+Linux
+
+
+=================
+Read: . Success: . Error (if any): 
+=================
+End debug

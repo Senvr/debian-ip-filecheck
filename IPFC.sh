@@ -1,20 +1,22 @@
 #!/bin/bash
-ExitError(){
-  if [ -z "$1"];
-  then
-    ErrorCode=1
-  echo ""
-
-  echo "Program exited with an error! Check the debug file. Severity: $1"
-  exit $ErrorCode
-}
 set -e
-echo "Setting variables"
+which git &> /dev/null || { echo >&2 "I require git but it's not installed.  Aborting."; ExitError 1; }
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd  )"
+cd $DIR/Temp
+wget https://raw.githubusercontent.com/Senvr11/debian-ip-filecheck/master/Files/VERSION
+UpVer=$(cat VERSION)
+clear
+if [ ! "$UpVer" = "$Version" ]; then
+bash $DIR/Files/Update.sh
+exit 0
+else
+echo "No update required."
+fi
+
+cd $DIR
 Version=$(cat $DIR/Files/VERSION)
 platform='unknown'
 unamestr=`uname`
-echo "Checking platform"
 if [[ "$unamestr" == 'Linux' ]]; then
    platform='linux'
 elif [[ "$unamestr" == 'FreeBSD' ]]; then
@@ -25,24 +27,25 @@ else
    echo "WARNING: PROGRAM CANNOT DETERMINE PLATFORM. I DO NOT RECOMMEND RUNNING! YOU HAVE BEEN WARNED."
    sleep 10
 fi
-echo "Checking if file is real"
 SourceFile=$1
 if [ ! -f $SourceFile ]; then
     File="False"
     FileError="file doesn't exist."
 fi
-echo "Checking if file is readable"
 if [ ! -r $SourceFile ]; then
 	File="False"
 	FileError="file could not be read"
 fi	
-echo "Checking if file has a size greator than zero"
 if [ ! -s $SourceFile ]; then
 	File="False"
 	FileError="filesize less than zero"
 fi
 
-echo "Making debug file"
+ExitError(){
+  echo "Program exited with an error! Check the debug file. Severity: $1"
+  exit $ErrorCode
+}
+
 cat >$DIR/debug.txt <<EOL
 Variables:
 ================
@@ -58,6 +61,7 @@ Read: $SourceFile. Success: $File. Error (if any): $FileError
 =================
 End debug
 EOL
+cd $DIR
 clear
 echo "IP.F.C, version $Version. Created by Senvr11"
 echo ""
