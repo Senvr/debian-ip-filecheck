@@ -1,13 +1,241 @@
+You hit the VarDump!
 Variables:
 ================
+/var/log/auth.log
 
 /home/lee/Programming/debian-ip-filecheck
-0.2
+
+0.3
+
 linux
+
 Linux
 
 
+
+
+
+
+
+
+
+
 =================
-Read: . Success: . Error (if any): 
+Read: /var/log/auth.log. Success: . Error (if any): 
 =================
 End debug
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17Set the ExitError function
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17Set the ExitError function
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
+05-12-17Set the ExitError function
+05-12-17CD to dir var
+05-12-17get github file
+05-12-17check
+05-12-17im lasy
+05-12-17 
