@@ -1,7 +1,23 @@
 #!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd  )"
+cd $DIR
+cd ..
+. Config.cfg
+
+if [ "$NoUpdate" = "True" ]; then
+echo "Due to the configuration in Config.cfg, the auto updating feature has been disabled."
+exit 0
+fi
+ExitError(){
+  echo "Program exited with an error! Check the debug file. Severity: $1"
+  cd $DIR
+  cd Temp
+  rm *
+  exit $ErrorCode
+}
 if [[ ! $EUID -ne 0 ]]; then
    echo "This script cannot be ran as root." 
-   exit 1
+   ExitError 1
 fi
 echo "IPFC Update Module."
 echo ""
@@ -11,7 +27,7 @@ echo ""
 echo "Commencing update!"
 sleep 2
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd  )"
+
 echo ""
 echo "Set dir var"
 cd $DIR
