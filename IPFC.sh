@@ -1,15 +1,25 @@
 #!/bin/bash
 set -e
 mkdir -p Temp
+if [[ ! $EUID -ne 0 ]]; then
+   echo "This script cannot be ran as root." 
+   exit 1
+fi
 which git &> /dev/null || { echo >&2 "I require git but it's not installed.  Aborting."; ExitError 1; }
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd  )"
+ExitError(){
+  echo "Program exited with an error! Check the debug file. Severity: $1"
+  cd $DIR
+  cd Temp
+  rm *
+  exit $ErrorCode
+}
 cd $DIR/Temp
 wget https://raw.githubusercontent.com/Senvr11/debian-ip-filecheck/master/Files/VERSION
 UpVer=$(cat VERSION)
-clear
+Version=$(cat $DIR/Files/VERSION)
 if [ ! "$UpVer" = "$Version" ]; then
 bash $DIR/Files/Update.sh
-exit 0
 else
 echo "No update required."
 fi
@@ -42,10 +52,7 @@ if [ ! -s $SourceFile ]; then
 	FileError="filesize less than zero"
 fi
 
-ExitError(){
-  echo "Program exited with an error! Check the debug file. Severity: $1"
-  exit $ErrorCode
-}
+
 
 cat >$DIR/debug.txt <<EOL
 Variables:
@@ -72,4 +79,6 @@ if [[ $File == "False" ]]; then
 fi
 ###Scraping file for IPs
 IPs=$(grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' $SourceFile)
+cd $DIR
+echo $IP > $DIR/Temp/TempFile.A
 
